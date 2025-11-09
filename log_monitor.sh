@@ -3,7 +3,6 @@ set -euo pipefail
 LOG_DIR="$(pwd)/logs"; mkdir -p "$LOG_DIR"
 ALERT_LOG="$LOG_DIR/alerts.log"
 
-# Configurable targets/patterns
 FILES=(
   "/var/log/syslog"     # Debian/Ubuntu
   "/var/log/messages"   # RHEL/Fedora

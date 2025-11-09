@@ -14,7 +14,6 @@ require_root() {
 
 require_root
 
-# Detect family
 if command -v apt >/dev/null 2>&1; then
   PKG='apt'; CLEAN="apt autoremove -y && apt autoclean -y"
   UPDATE="apt update -y"; UPGRADE="apt upgrade -y"
